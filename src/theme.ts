@@ -3,9 +3,9 @@ import { createTheme } from "@mui/material/styles";
 
 export const theme = createTheme({
 	palette: {
-		primary: { main: "#1e88e5" }, // Bleu pour le style pro
-		secondary: { main: "#ff4081" }, // Rose pour les accents
-		background: { default: "#0a192f", paper: "#112240" }, // Fond sombre
+		primary: { main: "#1e88e5" },
+		secondary: { main: "#ff4081" },
+		background: { default: "#0a192f", paper: "#112240" },
 		text: { primary: "#ccd6f6", secondary: "#8892b0" },
 	},
 	typography: {
