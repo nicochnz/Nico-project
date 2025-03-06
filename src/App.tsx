@@ -1,6 +1,7 @@
 import { ThemeProvider } from "@emotion/react";
 import Homepage from "./components/Homepage";
 import Navbar from "./components/Navbar";
+import { Projects } from "./components/Project";
 import { theme } from "./theme";
 function App() {
 	return (
@@ -8,6 +9,7 @@ function App() {
 			<main>
 				<Homepage />
 				<Navbar />
+				<Projects />
 			</main>
 		</ThemeProvider>
 	);
