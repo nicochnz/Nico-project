@@ -51,6 +51,7 @@ nav ul li a {
 	&:hover {
 		color: #0a192f;
 		font-size: 1.5rem;
+		cursor: pointer;
 	}
 }
 
