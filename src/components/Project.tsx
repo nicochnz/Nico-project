@@ -12,7 +12,7 @@ const projects = [
 	{
 		id: 1,
 		title: "Bordeaux Quizz",
-		image: "src/assets/images/Projet1(1).png",
+		image: "/assets/images/Projet1(1).png",
 		description:
 			"Development of an interactive quiz about Bordeaux with two difficulty levels (easy and hard). Built with HTML, CSS, and JavaScript.",
 		stacks: ["HTML", "CSS", "JavaScript"],
@@ -23,7 +23,7 @@ const projects = [
 	{
 		id: 2,
 		title: "Smash-Cards",
-		image: "src/assets/images/Projet2(4).png",
+		image: "/assets/images/Projet2(4).png",
 		description:
 			"Development of a memory game themed around Super Smash Bros, completed in one month using CSS, React, TypeScript, and Express.",
 		stacks: ["CSS", "Typescript", "React", "Express"],
@@ -34,13 +34,13 @@ const projects = [
 	{
 		"id": 3,
 		"title": "Veever",
-		"image": "src/assets/images/Projet3.png",
+		"image": "/assets/images/Projet3.png",
 		"description":
 			"Development of an MVP for a user journey application, designed to help users plan vacations or weekends by selecting hotels, restaurants, and activities.",
 		"stacks": ["CSS", "TypeScript", "React", "Express", "MySQL"],
 		"skillsdeveloped":
 			"This project allowed me to gain experience in full-stack development, database design, and API integration. Working with real clients was a significant challenge, helping me improve my ability to adapt to requirements, and communicate effectively",
-		"link": "/src/assets/images/video/Veever parcours.mp4"
+		"link": "/assets/images/video/Veever parcours.mp4"
 	}
 ];
 
