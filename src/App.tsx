@@ -3,16 +3,25 @@ import Homepage from "./components/Homepage";
 import Navbar from "./components/Navbar";
 import { Projects } from "./components/Project";
 import { theme } from "./theme";
+import "./index.css"
+import TerminalPortfolio from "./components/Terminal/Terminal";
 function App() {
-	return (
-		<ThemeProvider theme={theme}>
-			<main>
-				<Homepage />
-				<Navbar />
-				<Projects />
-			</main>
-		</ThemeProvider>
-	);
+  return (
+    <ThemeProvider theme={theme}>
+      <main>
+			<div id="home">
+        <Homepage />
+				</div>
+        <Navbar />
+        <div id="projects">
+          <Projects />
+        </div>
+        <div id="terminal">
+          <TerminalPortfolio />
+        </div>
+      </main>
+    </ThemeProvider>
+  );
 }
 
 export default App;

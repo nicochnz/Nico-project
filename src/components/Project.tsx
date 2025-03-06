@@ -49,6 +49,8 @@ export function Projects() {
 		<Box sx={{ my: 6 }}>
 			<Typography
 				variant="h4"
+				fontSize={60}
+				padding={5}
 				color="text.secondary"
 				textAlign="center"
 				gutterBottom
@@ -57,31 +59,34 @@ export function Projects() {
 			</Typography>
 			<Grid container spacing={3}>
 				{projects.map((project) => (
-					<Grid item xs={12} sm={6} md={4} key={project.id}>
-						<Card sx={{ backgroundColor: "background.paper" }}>
-							<CardMedia component="img" height="230" image={project.image} />
-							<CardContent>
-								<Typography variant="h6">{project.title}</Typography>
-								<Typography variant="body2">{project.description}</Typography>
-								<Typography variant="subtitle2" sx={{ mt: 2 }}>
-									<b>Skills:</b> {project.stacks.join(", ")}
-								</Typography>
-								<Typography variant="subtitle2" sx={{ mt: 2 }}>
-									<b>Skills developed:</b> {project.skillsdeveloped}
-								</Typography>
-								<Box sx={{ display: "flex", justifyContent: "center", mt: 1 }}>
-									<Link
-										href={project.link}
-										target="_blank"
-										rel="noopener noreferrer"
-										sx={{ display: "block" }}
-									>
-										Discover-it
-									</Link>
-								</Box>
-							</CardContent>
-						</Card>
-					</Grid>
+				<Grid item xs={12} sm={6} md={4} key={project.id}>
+				<Card sx={{ backgroundColor: "background.paper", height: "100%", display: "flex", flexDirection: "column" }}>
+					<CardMedia component="img" height="230" image={project.image} sx={{ marginBottom: 4 }} />
+					<CardContent sx={{ flexGrow: 1 }}>
+						<Typography variant="h6" textAlign={"center"} sx={{ mt: 2, mb: 2 }}>
+							{project.title}
+						</Typography>
+						<Typography variant="body2">{project.description}</Typography>
+						<Typography variant="subtitle2" sx={{ mt: 2 }}>
+							<b>Stacks:</b> {project.stacks.join(", ")}
+						</Typography>
+						<Typography variant="subtitle2" sx={{ mt: 2 }}>
+							<b>Skills developed:</b> {project.skillsdeveloped}
+						</Typography>
+					</CardContent>
+					<Box sx={{ display: "flex", justifyContent: "center", mt: "auto", mb: 2 }}>
+						<Link
+							href={project.link}
+							target="_blank"
+							rel="noopener noreferrer"
+							sx={{ display: "block", textAlign: "center" }}
+						>
+							Discover-it
+						</Link>
+					</Box>
+				</Card>
+			</Grid>
+			
 				))}
 			</Grid>
 		</Box>
