@@ -5,6 +5,7 @@ import { Projects } from "./components/Project";
 import { theme } from "./theme";
 import "./index.css"
 import TerminalPortfolio from "./components/Terminal/Terminal";
+import CV from "./components/Terminal/Cv";
 function App() {
   return (
     <ThemeProvider theme={theme}>
@@ -18,6 +19,9 @@ function App() {
         </div>
         <div id="terminal">
           <TerminalPortfolio />
+        </div>
+        <div id="CV">
+        <CV/>
         </div>
       </main>
     </ThemeProvider>

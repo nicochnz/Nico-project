@@ -33,6 +33,9 @@ export default function Navbar() {
           <li>
             <Link to="terminal" smooth={true} duration={500}>Terminal</Link>
           </li>
+					<li>
+            <Link to="CV" smooth={true} duration={500}>CV</Link>
+          </li>
         </ul>
       </nav>
     </header>
