@@ -46,7 +46,7 @@ export default function CV() {
 				href="/LAST CV CHICHE NICOLAS DEV WEB.pdf"
 				download="CV_Nicolas_Chiche.pdf"
 			>
-				Download it(PDF)
+				Download (PDF)
 			</Button>
 		</Box>
 	);
