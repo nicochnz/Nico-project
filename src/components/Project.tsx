@@ -46,7 +46,8 @@ const projects = [
 
 export function Projects() {
 	return (
-		<Box sx={{ my: 6 }}>
+		<Box sx={{ my: 6, px: 4 }}>
+
 			<Typography
 				variant="h4"
 				fontSize={60}
@@ -59,15 +60,24 @@ export function Projects() {
 			</Typography>
 			<Grid container spacing={3}>
 				{projects.map((project) => (
-				<Grid item xs={12} sm={6} md={4} key={project.id}>
-				<Card sx={{ backgroundColor: "background.paper", height: "100%", display: "flex", flexDirection: "column" }}>
+				<Grid item xs={12} sm={6} md={4} key={project.id} sx={{ padding: 2 }}>
+
+<Card sx={{ 
+	backgroundColor: "background.paper", 
+	height: "100%", 
+	display: "flex", 
+	flexDirection: "column", 
+	width: "90%",
+	margin: "auto"
+}}>
+
 					<CardMedia component="img" height="230" image={project.image} sx={{ marginBottom: 4 }} />
 					<CardContent sx={{ flexGrow: 1 }}>
-						<Typography variant="h6" textAlign={"center"} sx={{ mt: 2, mb: 2 }}>
+						<Typography variant="h6" textAlign={"center"}  sx={{ mb: 2 ,fontSize:"2rem", fontWeight: "bold"}}>
 							{project.title}
 						</Typography>
 						<Typography variant="body2">{project.description}</Typography>
-						<Typography variant="subtitle2" sx={{ mt: 2 }}>
+						<Typography variant="subtitle2" sx={{ mt: 2, }}>
 							<b>Stacks:</b> {project.stacks.join(", ")}
 						</Typography>
 						<Typography variant="subtitle2" sx={{ mt: 2 }}>
@@ -75,14 +85,29 @@ export function Projects() {
 						</Typography>
 					</CardContent>
 					<Box sx={{ display: "flex", justifyContent: "center", mt: "auto", mb: 2 }}>
-						<Link
-							href={project.link}
-							target="_blank"
-							rel="noopener noreferrer"
-							sx={{ display: "block", textAlign: "center" }}
-						>
-							Discover-it
-						</Link>
+					<Link
+	href={project.link}
+	target="_blank"
+	rel="noopener noreferrer"
+	sx={{
+		display: "inline-block",
+		textAlign: "center",
+		backgroundColor: "#1976D2", 
+		color: "white",
+		padding: "8px 16px",
+		borderRadius: "8px",
+		textDecoration: "none",
+		fontWeight: "bold",
+		transition: "0.3s",
+		"&:hover": {
+			backgroundColor: "#1565C0", 
+			boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.2)",
+		},
+	}}
+>
+	Discover-it
+</Link>
+
 					</Box>
 				</Card>
 			</Grid>
