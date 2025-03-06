@@ -18,10 +18,10 @@ export default function CV() {
 			}}
 		>
 			<Typography variant="h4" color="text.primary">
-				Mon CV
+				More about me
 			</Typography>
 
-			{/* Affichage de l'image du CV */}
+			
 			<Box
 				sx={{
 					width: "80%",
@@ -46,7 +46,7 @@ export default function CV() {
 				href="/LAST CV CHICHE NICOLAS DEV WEB.pdf"
 				download="CV_Nicolas_Chiche.pdf"
 			>
-				Télécharger le CV (PDF)
+				Download it(PDF)
 			</Button>
 		</Box>
 	);
