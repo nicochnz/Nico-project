@@ -2,14 +2,12 @@
 
 .header {
 	width: 100vw;
-
 	margin-bottom: var(--spacing-ref);
 	z-index: 100;
 	position: fixed;
 	bottom: 0;
 	left: 0;
 	z-index: 1000;
-	
 	transition: transform 1s ease, bottom 1s ease;
 }
 
@@ -48,6 +46,7 @@ nav ul li a {
 	font-size: 1.25rem;
 	text-decoration: none;
 	transition: 0.6s;
+	font-family: 'Source Sans 3', sans-serif;
 	&:hover {
 		color: #F79E6B;
 		cursor: pointer;

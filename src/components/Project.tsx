@@ -102,7 +102,7 @@ export function Projects() {
 		fontWeight: "bold",
 		transition: "0.3s",
 		"&:hover": {
-			backgroundColor: "#5B584F", 
+			backgroundColor: "rgb(199, 192, 167)", 
 			boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.2)",
 		},
 		   fontFamily: "'Source Sans 3', sans-serif"
