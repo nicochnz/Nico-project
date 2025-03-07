@@ -10,6 +10,7 @@ html, body {
 }
 
 .container, main, section {
+  background-color: #E0D5AD;
   width: 100%;
   max-width: 100%;
   padding-left: 0;

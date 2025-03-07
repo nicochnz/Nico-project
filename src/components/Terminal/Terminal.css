@@ -46,11 +46,32 @@
 }
 
 .terminal-input {
-  background: none;
-  border: none;
+  background: black;  
+  border-left: 2px solid white;
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
   color: white;
   outline: none;
   width: 100%;
+  caret-color: white;
+  font-family: monospace;
+  font-size: 16px;
+  padding: 5px;
+}
+
+.terminal-input::after {
+  content: "|";
+  display: inline-block;
+  margin-left: 2px;
+  animation: blink 1s infinite;
+  color: white;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
 }
 
 .terminal-container {

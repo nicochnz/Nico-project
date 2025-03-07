@@ -58,7 +58,6 @@ const TerminalPortfolio = () => {
       onChange={(e) => setInput(e.target.value)}
       onKeyDown={(e) => e.key === "Enter" && handleCommand()}
       className="terminal-input"
-      autoFocus
     />
   </div>
 </div>

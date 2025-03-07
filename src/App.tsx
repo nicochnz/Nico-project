@@ -5,7 +5,7 @@ import { Projects } from "./components/Project";
 import { theme } from "./theme";
 import "./index.css"
 import TerminalPortfolio from "./components/Terminal/Terminal";
-import CV from "./components/Terminal/Cv";
+import CV from "./components/Cv";
 function App() {
   return (
     <ThemeProvider theme={theme}>

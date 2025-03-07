@@ -12,7 +12,7 @@ const projects = [
 	{
 		id: 1,
 		title: "Bordeaux Quizz",
-		image: "/assets/images/Projet1(1).png",
+		image: "/assets/images/Projet1(m).png",
 		description:
 			"Development of an interactive quiz about Bordeaux with two difficulty levels (easy and hard). Built with HTML, CSS, and JavaScript.",
 		stacks: ["HTML", "CSS", "JavaScript"],
@@ -23,7 +23,7 @@ const projects = [
 	{
 		id: 2,
 		title: "Smash-Cards",
-		image: "/assets/images/Projet2(4).png",
+		image: "/assets/images/Projet2(m).png",
 		description:
 			"Development of a memory game themed around Super Smash Bros, completed in one month using CSS, React, TypeScript, and Express.",
 		stacks: ["CSS", "Typescript", "React", "Express"],
@@ -46,24 +46,26 @@ const projects = [
 
 export function Projects() {
 	return (
-		<Box sx={{ my: 6, px: 4 }}>
+		<Box sx={{ my: 6, px: 4, backgroundColor:"#E0D5AD"}}>
 
 			<Typography
 				variant="h4"
 				fontSize={60}
 				padding={5}
-				color="text.secondary"
+				color="text.primary"
+				fontWeight="bold"
 				textAlign="center"
 				gutterBottom
+				sx={{ fontFamily: "'Oswald', sans-serif" }}
 			>
-				My projects
+				My school projects
 			</Typography>
 			<Grid container spacing={3}>
 				{projects.map((project) => (
 				<Grid item xs={12} sm={6} md={4} key={project.id} sx={{ padding: 2 }}>
 
 <Card sx={{ 
-	backgroundColor: "background.paper", 
+	backgroundColor: "#F79E6B", 
 	height: "100%", 
 	display: "flex", 
 	flexDirection: "column", 
@@ -71,16 +73,16 @@ export function Projects() {
 	margin: "auto"
 }}>
 
-					<CardMedia component="img" height="230" image={project.image} sx={{ marginBottom: 4 }} />
+					<CardMedia component="img" height="250" image={project.image} sx={{ marginBottom: 4 }} />
 					<CardContent sx={{ flexGrow: 1 }}>
-						<Typography variant="h6" textAlign={"center"}  sx={{ mb: 2 ,fontSize:"2rem", fontWeight: "bold"}}>
+						<Typography variant="h6" textAlign={"center"}  sx={{ mb: 2 ,fontSize:"2rem", fontWeight: "bold", color:"rgb(248, 240, 212)"}}>
 							{project.title}
 						</Typography>
-						<Typography variant="body2">{project.description}</Typography>
-						<Typography variant="subtitle2" sx={{ mt: 2, }}>
+						<Typography variant="body2" sx={{ fontSize: "1rem" }}>{project.description}</Typography>
+						<Typography variant="subtitle2" sx={{ mt: 2, fontSize: "1rem" }}>
 							<b>Stacks:</b> {project.stacks.join(", ")}
 						</Typography>
-						<Typography variant="subtitle2" sx={{ mt: 2 }}>
+						<Typography variant="subtitle2" sx={{ mt: 2, fontSize: "1rem" }}>
 							<b>Skills developed:</b> {project.skillsdeveloped}
 						</Typography>
 					</CardContent>
@@ -92,17 +94,18 @@ export function Projects() {
 	sx={{
 		display: "inline-block",
 		textAlign: "center",
-		backgroundColor: "#1976D2", 
-		color: "white",
+		backgroundColor: "rgb(248, 240, 212)", 
+		color: "black",
 		padding: "8px 16px",
 		borderRadius: "8px",
 		textDecoration: "none",
 		fontWeight: "bold",
 		transition: "0.3s",
 		"&:hover": {
-			backgroundColor: "#1565C0", 
+			backgroundColor: "#5B584F", 
 			boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.2)",
 		},
+		   fontFamily: "'Source Sans 3', sans-serif"
 	}}
 >
 	Discover-it

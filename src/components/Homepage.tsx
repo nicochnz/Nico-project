@@ -12,7 +12,8 @@ export default function Homepage() {
 				justifyContent: "center",
 				flexDirection: "column",
 				textAlign: "center",
-				backgroundColor: "background.default",
+				backgroundColor: "#F79E6B",
+				fontFamily: "'Source Sans 3', sans-serif",
 			}}
 		>
 			<motion.div
@@ -23,7 +24,7 @@ export default function Homepage() {
 				<Typography variant="h1" color="text.primary">
 					Chiche Nicolas
 					<br />
-					<span style={{ color: "#64ffda" }}>Hi, I'm a French developer</span>
+					<span style={{ color: "rgb(248, 240, 212)" }}>Hi, I'm a French developer</span>
 				</Typography>
 				<Box
 					sx={{
@@ -49,11 +50,12 @@ export default function Homepage() {
 							key={skill}
 							sx={{
 								border: "1px solid",
-								borderColor: "text.secondary",
+								borderColor: "text.primary",
 								borderRadius: 1,
 								padding: "4px 8px",
-								color: "text.secondary",
+								color: "text.primary",
 								fontSize: "1.25rem",
+								fontFamily: "'Source Sans 3', sans-serif",
 							}}
 						>
 							{skill}

@@ -13,11 +13,11 @@ export default function CV() {
 				justifyContent: "center",
 				gap: 2,
 				textAlign: "center",
-				backgroundColor: "background.default",
+				backgroundColor: "#F79E6B",
 				padding: 2,
 			}}
 		>
-			<Typography variant="h4" color="text.primary">
+			<Typography variant="h4" color="text.primary" fontWeight="bold">
 				More about me
 			</Typography>
 
@@ -41,7 +41,7 @@ export default function CV() {
 
 			<Button
 				variant="contained"
-				color="primary"
+				sx={{ backgroundColor: "rgb(248, 240, 212)" }}
 				startIcon={<Download />}
 				href="/LAST CV CHICHE NICOLAS DEV WEB.pdf"
 				download="CV_Nicolas_Chiche.pdf"
