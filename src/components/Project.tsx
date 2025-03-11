@@ -79,10 +79,10 @@ export function Projects() {
 							{project.title}
 						</Typography>
 						<Typography variant="body2" sx={{ fontSize: "1rem" }}>{project.description}</Typography>
-						<Typography variant="subtitle2" sx={{ mt: 2, fontSize: "1rem" }}>
+						<Typography variant="subtitle2" sx={{ mt: 2, fontSize: "1rem",fontWeight: 400  }}>
 							<b>Stacks:</b> {project.stacks.join(", ")}
 						</Typography>
-						<Typography variant="subtitle2" sx={{ mt: 2, fontSize: "1rem" }}>
+						<Typography variant="subtitle2" sx={{ mt: 2, fontSize: "1rem", fontWeight: 400 }}>
 							<b>Skills developed:</b> {project.skillsdeveloped}
 						</Typography>
 					</CardContent>
