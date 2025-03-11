@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./Terminal.css";
 
-const words = ["react", "server", "frontend", "backend", "typescript", "developer"];
+const words = ["react", "server", "frontend", "backend", "typescript", "developer", "usestate"];
 
 const TerminalPortfolio = () => {
   const [history, setHistory] = useState<string[]>([
@@ -43,6 +43,7 @@ const TerminalPortfolio = () => {
       "💻 Email: chiche.nicolas@gmail.com",
       "💻 LinkedIn: https://www.linkedin.com/in/nicolas-chiche-79903b2b0/",
       "💻 Github: https://github.com/nicochnz",
+      "Want to play? Type 'hangman'.",
     ],
     clear: [],
   };
@@ -93,7 +94,7 @@ const TerminalPortfolio = () => {
     setHistory([...history, `> ${letter}`, displayWord]);
 
     if (!displayWord.includes("_")) {
-      setHistory([...history, `> ${letter}`, `🎉 Congrats! You found the word '${hangmanWord}'! Nicolas is as sharp as your skills!`]);
+      setHistory([...history, `> ${letter}`, `🎉 Congrats! You found the word '${hangmanWord}'! If you want more fun, hire Nicolas!`]);
       setHangmanWord(null);
     }
   };
