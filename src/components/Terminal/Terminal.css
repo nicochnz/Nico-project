@@ -67,6 +67,19 @@
   animation: blink 1s infinite;
   color: white;
 }
+.terminal-output .highlight {
+  color: #5ec4ff;
+  font-weight: bold;
+}
+
+.terminal-link {
+  color: #ffca28;
+  text-decoration: none;
+}
+
+.terminal-link:hover {
+  text-decoration: underline;
+}
 
 @keyframes blink {
   50% {

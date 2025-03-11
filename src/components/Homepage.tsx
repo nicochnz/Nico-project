@@ -1,5 +1,6 @@
 import { Box, Typography } from "@mui/material";
 import { motion } from "framer-motion";
+import Navbar from "./Navbar";
 
 export default function Homepage() {
 	return (
@@ -14,6 +15,7 @@ export default function Homepage() {
 				textAlign: "center",
 				backgroundColor: "#F79E6B",
 				fontFamily: "'Source Sans 3', sans-serif",
+				position: "relative",
 			}}
 		>
 			<motion.div
@@ -63,6 +65,7 @@ export default function Homepage() {
 					))}
 				</Box>
 			</motion.div>
+			<Navbar/>
 		</Box>
 	);
 }

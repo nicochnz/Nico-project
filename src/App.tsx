@@ -1,6 +1,5 @@
 import { ThemeProvider } from "@emotion/react";
 import Homepage from "./components/Homepage";
-import Navbar from "./components/Navbar";
 import { Projects } from "./components/Project";
 import { theme } from "./theme";
 import "./index.css"
@@ -13,7 +12,6 @@ function App() {
 			<div id="home">
         <Homepage />
 				</div>
-        <Navbar />
         <div id="projects">
           <Projects />
         </div>

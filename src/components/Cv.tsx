@@ -1,5 +1,5 @@
 import { Box, Button, Typography } from "@mui/material";
-import { Download } from "@mui/icons-material";
+import { Download, ArrowUpward } from "@mui/icons-material";
 
 export default function CV() {
 	return (
@@ -17,11 +17,11 @@ export default function CV() {
 				padding: 2,
 			}}
 		>
+			<Box id="home" />
 			<Typography variant="h4" color="text.primary" fontWeight="bold">
 				More about me
 			</Typography>
 
-			
 			<Box
 				sx={{
 					width: "80%",
@@ -47,6 +47,17 @@ export default function CV() {
 				download="CV_Nicolas_Chiche.pdf"
 			>
 				Download (PDF)
+			</Button>
+
+			<Button
+				variant="contained"
+				sx={{ backgroundColor: "rgb(248, 240, 212)", marginTop: 2 }}
+				startIcon={<ArrowUpward />}
+				onClick={() => {
+					document.getElementById("home")?.scrollIntoView({ behavior: "smooth" });
+				}}
+			>
+				Back to homepage
 			</Button>
 		</Box>
 	);
