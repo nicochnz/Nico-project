@@ -1,11 +1,11 @@
+import { ArrowUpward, Download } from "@mui/icons-material";
 import { Box, Button, Typography } from "@mui/material";
-import { Download, ArrowUpward } from "@mui/icons-material";
 
 export default function CV() {
 	return (
 		<Box
 			sx={{
-				width: "100vw",
+				width: "100%",
 				height: "100vh",
 				display: "flex",
 				flexDirection: "column",
@@ -33,7 +33,7 @@ export default function CV() {
 				}}
 			>
 				<img
-					src="cv.jpg" 
+					src="cv.jpg"
 					alt="CV de Nicolas Chiche"
 					style={{ width: "100%", height: "100%", objectFit: "contain" }}
 				/>
@@ -54,7 +54,9 @@ export default function CV() {
 				sx={{ backgroundColor: "rgb(248, 240, 212)", marginTop: 2 }}
 				startIcon={<ArrowUpward />}
 				onClick={() => {
-					document.getElementById("home")?.scrollIntoView({ behavior: "smooth" });
+					document
+						.getElementById("home")
+						?.scrollIntoView({ behavior: "smooth" });
 				}}
 			>
 				Back to homepage

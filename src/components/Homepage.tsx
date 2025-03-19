@@ -6,7 +6,7 @@ export default function Homepage() {
 	return (
 		<Box
 			sx={{
-				width: "100vw",
+				width: "100%",
 				height: "100vh",
 				display: "flex",
 				alignItems: "center",
@@ -26,7 +26,9 @@ export default function Homepage() {
 				<Typography variant="h1" color="text.primary">
 					Chiche Nicolas
 					<br />
-					<span style={{ color: "rgb(248, 240, 212)" }}>Hi, I'm a French developer</span>
+					<span style={{ color: "rgb(248, 240, 212)" }}>
+						Hi, I'm a French developer
+					</span>
 				</Typography>
 				<Box
 					sx={{
@@ -65,7 +67,7 @@ export default function Homepage() {
 					))}
 				</Box>
 			</motion.div>
-			<Navbar/>
+			<Navbar />
 		</Box>
 	);
 }
